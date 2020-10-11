@@ -23,7 +23,7 @@ It's a LCD mod for the original Xbox without modchip.
 
 **Note**
   - Delay for displaying fan speed, temp° of CPU, M/B and resolution is 2 secs to 30 secs for first time.
-    And the next times is 2 secs to 10 secs. It's depend of the SMBus if is busy or not.
+    <br>And the next times is 2 secs to 10 secs. It's depend of the SMBus if is busy or not.
   - Contrast and backlight are controlled by only one potentiometer in same time.
 
 ### Parts list
@@ -53,10 +53,10 @@ Open the IDE and click to the "Sketch" menu and then Include Library > [Manage L
 **RTC2Xbox Library**
   - [Clone this repository to your PC](https://github.com/PatFrost/rtc2xbox.git)
   - [Or Download Zip](https://github.com/PatFrost/rtc2xbox/archive/master.zip)
-    Extract to `rtc2xbox` or rename `rtc2xbox-master` to `rtc2xbox`
+    <br>Extract to `rtc2xbox` or rename `rtc2xbox-master` to `rtc2xbox`
 
 ### RTC Installation & Programming
-1. Connect Slave (Pro Micro) to RTC DS1307
+1. Connect Slave (Pro Micro) to RTC DS1307 <br>
     <img src="./resources/images/1.slave_rtc.jpg" alt="rtc2xbox" width="50%"/>
 2. Program Slave (Pro Micro), open `/rtc2xbox/rtc2xbox_slave/rtc2xbox_slave.ino` with Arduino IDE.
     Uncomment below, if you want force adjust date time.
@@ -78,7 +78,7 @@ Open the IDE and click to the "Sketch" menu and then Include Library > [Manage L
     uint8_t month =   10; // 1-12
     uint16_t year = 2020; // 2000-2099
     ```
-3. Set the Board Type the Arduino Leonardo and the port correctly.
+3. Set the Board Type the Arduino Leonardo and the port correctly. <br>
     <img src="./resources/images/ide_board.jpg" alt="rtc2xbox" width="50%"/>
     <img src="./resources/images/ide_port.jpg" alt="rtc2xbox" width="50%"/>
 4. Compile by clicking the tick in the top left.
@@ -107,16 +107,16 @@ Open the IDE and click to the "Sketch" menu and then Include Library > [Manage L
 12. Disconnect Master (Pro Micro)
 
 ### Hardware Installation
-1. Connect Master (Pro Micro) to LCD, Potentiometer and Thermistor (Optional)
+1. Connect Master (Pro Micro) to LCD, Potentiometer and Thermistor (Optional)<br>
     <img src="./resources/images/2.master_lcd.jpg" alt="rtc2xbox" width="50%"/>
-2. Connect Master (Pro Micro) for voltages reading
+2. Connect Master (Pro Micro) for voltages reading<br>
     <img src="./resources/images/3.molex.jpg" alt="rtc2xbox" width="50%"/>
-3. Connect Master (Pro Micro) to Slave (Pro Micro)
+3. Connect Master (Pro Micro) to Slave (Pro Micro)<br>
     <img src="./resources/images/4.serial1.jpg" alt="rtc2xbox" width="50%"/>
-4. Connect Master (Pro Micro) to Xbox LPC
+4. Connect Master (Pro Micro) to Xbox LPC<br>
     <img src="./resources/images/5.lpc_to_master.jpg" alt="rtc2xbox" width="50%"/>
 ****
-**Final Result**
+**Final Result**<br>
 <img src="./resources/images/6.connections.jpg" alt="rtc2xbox" width="50%"/>
 
 ### Development
