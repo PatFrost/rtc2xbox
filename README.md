@@ -31,11 +31,11 @@ RTC2Xbox is inspired and based on [spi2par2019](https://github.com/Ryzee119/spi2
 ### Parts list
 | Part | Qty | Shops | Optional |
 | ---- | :----: | ----- | ----- |
-| Arduino Pro Micro Leonardo **5V/16Mhz** | **2** | [Any clones will work.](https://www.amazon.com/s?k=Arduino+Pro+Micro+Leonardo+5V%2F16Mhz&ref=nb_sb_noss) Make sure they're the **5V/16Mhz** variant. |
-| Adafruit **DS1307** Real Time Clock  | **1** | [Any clones will work.](https://www.amazon.com/Adafruit-3296-DS1307-Clock-Breakout/dp/B01MG3NEWF/ref=sr_1_1?dchild=1&keywords=RTC+DS1307&qid=1602338436&sr=8-1) I don't recommend chinese versions. 1 of 10 work correctly. |
-| LCD 2004 | **1** | [Any LCD 20x4 will work.](https://www.amazon.com/s?k=LCD+2004&ref=nb_sb_noss) If IIC/I2C/TWI Serial Interface Adapter is present, remove it. |
-| Resistor 10kΩ | **6** |[Any Resistor 10kΩ](https://www.amazon.com/BOJACK-Single-Resistor-Resistors-200pcs/dp/B07PGHP69F/ref=sr_1_8?dchild=1&keywords=Resistor+10k%E2%84%A6&qid=1602341361&sr=8-8) Or any resistor in series with total values 10kΩ |
-| Resistor 25kΩ | **1** | [Any Resistor 25kΩ](https://www.amazon.com/s?k=Resistor+25k%E2%84%A6&ref=nb_sb_noss) Or any resistor in series with total values 25kΩ |
+| Arduino Pro Micro Leonardo **5V/16Mhz** | **2** | [Any clones will work](https://www.amazon.com/s?k=Arduino+Pro+Micro+Leonardo+5V%2F16Mhz&ref=nb_sb_noss)<br> Make sure they're the **5V/16Mhz** variant. |
+| Adafruit **DS1307** Real Time Clock  | **1** | [Any clones will work](https://www.amazon.com/Adafruit-3296-DS1307-Clock-Breakout/dp/B01MG3NEWF/ref=sr_1_1?dchild=1&keywords=RTC+DS1307&qid=1602338436&sr=8-1) <br>I don't recommend chinese versions. 1 of 10 work correctly. |
+| LCD 2004 | **1** | [Any LCD 20x4 will work](https://www.amazon.com/s?k=LCD+2004&ref=nb_sb_noss) <br>If IIC/I2C/TWI Serial Interface Adapter is present, remove it. |
+| Resistor 10kΩ | **6** |[Any Resistor 10kΩ](https://www.amazon.com/BOJACK-Single-Resistor-Resistors-200pcs/dp/B07PGHP69F/ref=sr_1_8?dchild=1&keywords=Resistor+10k%E2%84%A6&qid=1602341361&sr=8-8) <br>Or any resistor in series with total values 10kΩ |
+| Resistor 25kΩ | **1** | [Any Resistor 25kΩ](https://www.amazon.com/s?k=Resistor+25k%E2%84%A6&ref=nb_sb_noss) <br>Or any resistor in series with total values 25kΩ |
 | Thermistor 10kΩ | **1** | [Any Thermistor 10kΩ](https://www.amazon.com/s?k=Thermistor+10k%E2%84%A6&s=price-asc-rank&qid=1602342606&ref=sr_st_price-asc-rank) | **Optional** |
 | Potentiometer 10kΩ | **1** |[Any Potentiometer 10kΩ](https://www.amazon.com/s?k=Potentiometer+10k%E2%84%A6&ref=nb_sb_noss)|
 | Capacitor 220uf | **1** | [Any Capacitor](https://www.amazon.com/s?k=Capacitor+220uf&ref=nb_sb_noss) | **Optional** |
