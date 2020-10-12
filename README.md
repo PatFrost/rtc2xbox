@@ -1,6 +1,8 @@
 
 # RTC2Xbox
-[![Preview](./resources/images/preview.jpg)]()
+<p align="center">
+  <img alt="Preview" src="./resources/images/preview.jpg">
+</p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square&logo=arduino"></a>
@@ -14,7 +16,7 @@
 </p>
 
 RTC2Xbox is inspired and based on [spi2par2019](https://github.com/Ryzee119/spi2par2019) by Ryzee119.
-It's a LCD mod for the original Xbox without modchip.
+<br>It's a LCD mod for the original Xbox without modchip.
 
 # New Features!
   - Display date and time with real time clock.
@@ -56,11 +58,13 @@ Open the IDE and click to the "Sketch" menu and then Include Library > [Manage L
     <br>Extract to `rtc2xbox` or rename `rtc2xbox-master` to `rtc2xbox`
 
 ### RTC Installation & Programming
-1. Connect Slave (Pro Micro) to RTC DS1307 <br>
-    <img src="./resources/images/1.slave_rtc.jpg" alt="rtc2xbox" width="50%"/>
-2. Program Slave (Pro Micro), open `/rtc2xbox/rtc2xbox_slave/rtc2xbox_slave.ino` with Arduino IDE.
+1. **Connect Slave (Pro Micro) to RTC DS1307** 
+    <br><br>
+    <img src="./resources/images/1.slave_rtc.jpg" alt="rtc2xbox"/>
+    <br><br><br>
+2. **Program Slave (Pro Micro), open `/rtc2xbox/rtc2xbox_slave/rtc2xbox_slave.ino` with Arduino IDE.**<br>
     Uncomment below, if you want force adjust date time.
-     Only set the datetime one time.
+    Only set the datetime one time.
     ```c++
     // #define FORCE_ADJUST_DATETIME
     ```
@@ -78,20 +82,22 @@ Open the IDE and click to the "Sketch" menu and then Include Library > [Manage L
     uint8_t month =   10; // 1-12
     uint16_t year = 2020; // 2000-2099
     ```
-3. Set the Board Type the Arduino Leonardo and the port correctly. <br>
-    <img src="./resources/images/ide_board.jpg" alt="rtc2xbox" width="50%"/>
-    <img src="./resources/images/ide_port.jpg" alt="rtc2xbox" width="50%"/>
-4. Compile by clicking the tick in the top left.
+    
+3. **Set the Board Type the Arduino Leonardo and the port correctly.**
+    <br><br>
+    <img src="./resources/images/ide_board.jpg" alt="rtc2xbox" width="50%"/><img src="./resources/images/ide_port.jpg" alt="rtc2xbox" width="50%"/>
+    <br><br><br>
+4. **Compile by clicking the tick in the top left.**<br>
     Check the console output it has compiled successfully
-5. Connect a Micro USB cable between the Slave (Pro Micro) and the PC.
-6. Click the upload button and confirm successful.
-7. Disconnect Slave (Pro Micro)
+5. **Connect a Micro USB cable between the Slave (Pro Micro) and the PC.**
+6. **Click the upload button and confirm successful.**
+7. **Disconnect Slave (Pro Micro)**
     * comment `#define FORCE_ADJUST_DATETIME`. Remember, only set the datetime one time.
         ```c++
         // #define FORCE_ADJUST_DATETIME
         ```
 ****
-8. Program Master (Pro Micro), open `/rtc2xbox/rtc2xbox.ino` with Arduino IDE.
+8. **Program Master (Pro Micro), open `/rtc2xbox/rtc2xbox.ino` with Arduino IDE.**<br>
     Uncomment below to make the in-game temp readouts display in Fahrenheit.
     ```c++
     // #define USE_FAHRENHEIT
@@ -100,36 +106,47 @@ Open the IDE and click to the "Sketch" menu and then Include Library > [Manage L
     ```c++
     #define USE_FAHRENHEIT
     ```
-9. Compile by clicking the tick in the top left.
+9. **Compile by clicking the tick in the top left.**<br>
     Check the console output it has compiled successfully
-10. Connect a Micro USB cable between the Master (Pro Micro) and the PC.
-11. Click the upload button and confirm successful.
-12. Disconnect Master (Pro Micro)
+10. **Connect a Micro USB cable between the Master (Pro Micro) and the PC.**
+11. **Click the upload button and confirm successful.**
+12. **Disconnect Master (Pro Micro)**
 
 ### Hardware Installation
-1. Connect Master (Pro Micro) to LCD, Potentiometer and Thermistor (Optional)<br>
-    <img src="./resources/images/2.master_lcd.jpg" alt="rtc2xbox" width="50%"/>
-2. Connect Master (Pro Micro) for voltages reading<br>
-    <img src="./resources/images/3.molex.jpg" alt="rtc2xbox" width="50%"/>
-3. Connect Master (Pro Micro) to Slave (Pro Micro)<br>
-    <img src="./resources/images/4.serial1.jpg" alt="rtc2xbox" width="50%"/>
-4. Connect Master (Pro Micro) to Xbox LPC<br>
-    <img src="./resources/images/5.lpc_to_master.jpg" alt="rtc2xbox" width="50%"/>
+1. **Connect Master (Pro Micro) to LCD, Potentiometer and Thermistor (Optional)**
+    <br><br>
+    <img src="./resources/images/2.master_lcd.jpg" alt="rtc2xbox"/>
+    <br><br><br>
+2. **Connect Master (Pro Micro) for voltages reading**
+    <br><br>
+    <img src="./resources/images/3.molex.jpg" alt="rtc2xbox"/>
+    <br><br><br>
+3. **Connect Master (Pro Micro) to Slave (Pro Micro)**
+    <br><br>
+    <img src="./resources/images/4.serial1.jpg" alt="rtc2xbox"/>
+    <br><br><br>
+4. **Connect Master (Pro Micro) to Xbox LPC**
+    <br><br>
+    <img src="./resources/images/5.lpc_to_master.jpg" alt="rtc2xbox"/>
+    <br><br><br>
 ****
+<br><br>
 **Final Result**<br>
-<img src="./resources/images/6.connections.jpg" alt="rtc2xbox" width="50%"/>
+<img src="./resources/images/6.connections.jpg" alt="rtc2xbox"/>
+<br><br><br>
 
 ### Development
-Want to contribute? Great!
+Want to contribute? Great!<br>
 [Open pull requests](https://github.com/PatFrost/rtc2xbox/pulls)
 
 ### Warning
-If you want to reprogram the Master (Pro Micro) and/or the Slave (Pro Micro)!
+If you want to reprogram the Master (Pro Micro) and/or the Slave (Pro Micro)!<br>
 Take no chances, **disconnect** plug for `voltages reading` and `wires between` Xbox LPC and Master (Pro Micro).
 
 ### Legal
-This article is intended to provide general information.
-Please always read and follow the labels/instructions that accompany your products.
+This article is intended to provide general information.<br>
+Please always read and follow the labels/instructions that accompany your products.<br>
 I cannot be held responsible for any injuries or damages caused by this activity.
 
+<br><br>
 **Cheers!!!**
